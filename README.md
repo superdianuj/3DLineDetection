@@ -7,4 +7,13 @@ Prerequisites:
 2. OpenMP
 3. No other libs
 
+Installation:
+```bash
+git clone --recursive
+cd 3DLineDetection
+cmake -B build && make -C build
+./build/src/LineFromPointCloud
+
+```
+
 ![image](https://github.com/superdianuj/3DLineDetection/assets/47445756/ee9cb3d8-4341-42fa-aef1-f79f918ad0c1)
