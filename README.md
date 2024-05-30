@@ -5,12 +5,14 @@ Prerequisites:
 ---
 1. OpenCV > 2.4.x
 2. OpenMP
-3. No other libs
+3. Python with Pytorch, Open3D
 
 Installation:
 ```bash
-git clone --recursive
+git clone --recursive https://github.com/superdianuj/3DLineDetection.git
 cd 3DLineDetection
+# if the point cloud data is in .ptx format, then
+python convert_ptx_2_txt.py
 cmake -B build && make -C build
 ./build/src/LineFromPointCloud
 
