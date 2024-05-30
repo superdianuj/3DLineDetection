@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import open3d as o3d
+import argparse
 
 def read_ptx_file(file_path):
     with open(file_path, 'r') as file:
@@ -29,5 +30,5 @@ def write_txt_file(points, colors, output_file_path):
             file.write(f"{x} {y} {z} {r} {g} {b}\n")
 
 # Example usage
-points, colors = read_ptx_file('office1/office1/scan0.ptx')
-write_txt_file(points, colors, 'output.txt')
+points, colors = read_ptx_file('scan0.ptx')
+write_txt_file(points, colors, 'data.txt')
