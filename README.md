@@ -7,6 +7,15 @@ Prerequisites:
 2. OpenMP
 3. Python with Pytorch, Open3D
 
+
+Dataset:
+
+[Link](https://www.ifi.uzh.ch/en/vmml/research/datasets.html)
+
+
+
+
+
 Installation:
 ```bash
 git clone --recursive https://github.com/superdianuj/3DLineDetection.git
